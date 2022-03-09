@@ -1,0 +1,71 @@
+/* Header */
+#logo {
+    width: 300px;
+    margin-top: 30px;
+}
+.nav-link {
+    display: inline;
+}
+
+.nav{
+    padding-bottom: 30px;
+}
+
+/* Utility */
+.margin_top_bottom_50 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.padding_top_160 {
+    padding-top: 160px;
+}
+
+/* Hero */
+#hero {
+    height: 80vh;
+    background-image: url('../img/hero-sconti.jpg');
+    background-size: cover;
+    background-position: center;
+}
+button{
+    width: 350px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+/* Cards */
+.cards {
+    height: 320px;
+    width: 320px;
+    margin: 20px;
+}
+.card-1 {
+    background-image: url('../img/card-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.card-2 {
+    background-image: url('../img/card-2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.card-3 {
+    background-image: url('../img/card-3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.card-4 {
+    background-image: url('../img/card-4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.card-5 {
+    background-image: url('../img/card-5.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.card-6 {
+    background-image: url('../img/card-6.jpg');
+    background-size: cover;
+    background-position: center;
+}

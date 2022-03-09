@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <title>Calcolo del prezzo del biglietto del treno</title>
+</head>
+<body class="padding_top_160">
+    <!--Header-->
+    <header class="text-center fixed-top bg-white">
+        <nav> 
+            <ul class="nav justify-content-center align-items-end">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <img class="img-fluid" id="logo" src="./asset/img/logo-trenitalia.svg" alt="logo-trenitalia">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="#"><span class="text-uppercase">trasporto regionale</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#"><span class="text-uppercase">offerte e servizi</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#"><span class="text-uppercase">cartafreccia</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#"><span class="text-uppercase">info e assistenza</span></a>
+                </li>
+            </ul>
+        </nav>  
+    </header>
+    <!--Hero-->
+    <div id="hero" class="d-flex justify-content-center align-items-end">
+        <button class="fs-2 fw-bold text-white bg-warning text-uppercase" id="ticket" style="margin-bottom: 50px;" onclick="ticket()">calculate ticket</button>
+        <div id="sconto_20"></div>
+        <div id="sconto_40"></div>
+        <div id="prezzo_pieno"></div>
+    </div>
+    <!--Main-->
+    <main class="container margin_top_bottom_50">
+        <div class="row">
+            <ul class="list-group col-12 col-md-4 d-flex flex-row flex-grow-1 flex-wrap justify-content-center">
+                <li class="card-1 cards list-group-item rounded"></li>
+                <li class="card-2 cards list-group-item rounded"></li>
+                <li class="card-3 cards list-group-item rounded"></li>
+                <li class="card-4 cards list-group-item rounded"></li>
+                <li class="card-5 cards list-group-item rounded"></li>
+                <li class="card-6 cards list-group-item rounded"></li>
+            </ul>
+        </div>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./asset/js/main.js"></script>
+</body>
+</html>
