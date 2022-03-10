@@ -15,12 +15,13 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due decima
 
 function ticket() {
     
-    let lunghezzaViaggio = prompt("Hello, please determine the length of your trip ?");
+    let lunghezzaViaggio = prompt("Ciao, per favore determina la lunghezza del tuo viaggio ");
     console.log(lunghezzaViaggio)
-    // document.getElementById(kilometri).innerHTML = lunghezzaViaggio " km";
+    // document.getElementById(lunghezza_viaggio).innerHTML = `${lunghezzaViaggio} "km"`;
 
-    let etàUtente = prompt("Please, enter your age ");
+    let etàUtente = prompt("Per favore, inserisci la tua età ");
     console.log(etàUtente)
+    // document.getElementById(età_utente).innerHTML = etàUtente + " km";
 
     const tariffaEuroAlKm = 0.21;
 
@@ -31,23 +32,24 @@ function ticket() {
     if (etàUtente < 18) {
         
         let discount_20 = (prezzoFinitoAlKm / 100) * 20;
-        let finalPrice = prezzoFinitoAlKm - discount_20;
+        var finalPrice = prezzoFinitoAlKm - discount_20;
         console.log(finalPrice)
-        document.getElementById(sconto_20).innerHTML = "Extra sconto minorenni del 20% applicato: " + finalPrice;
+        document.getElementById(sconto_20).innerHTML ="Extra sconto minorenni del 20% applicato: " + finalPrice;
+        return finalPrice.toFixed(2);
         
     } else if (etàUtente > 65) {
         
         let discount_40 = (prezzoFinitoAlKm / 100) * 40;
-        let finalPrice = prezzoFinitoAlKm - discount_40;
+        var finalPrice = prezzoFinitoAlKm - discount_40;
         console.log(finalPrice)
         document.getElementById(sconto_40).innerHTML = "Extra sconto over 65 del 40% applicato: " + finalPrice;
-    
+        return finalPrice.toFixed(2);
+
     } else {
     
         document.getElementById(prezzo_pieno).innerHTML = "Il tuo ticket costerà: " + prezzoFinitoAlKm;
-    
+        return prezzo_pieno.toFixed(2);
     }
+    
 }
 
-
-//     return finalPrice.toFixed(2);
